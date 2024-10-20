@@ -1,0 +1,124 @@
+{
+    "projects": [
+        {
+            "name": "Archery game",
+            "type": "Academic project",
+            "date": "October 2024",
+            "language": [
+                "Java",
+                "JavaFX",
+                "XML"
+            ],
+            "team-size": 8,
+            "description": "Developed a simple archery game in Java in a purposely limited timeframe. Supervised a group of 8 people including architects, version control managers and developers. \n The goal was to build a software following the SOLID principles and implementing various design patterns when needed. In our case, Proxy and Decorator design patterns were used.",
+            "links": []
+        },
+        {
+            "name": "Programming Challenge",
+            "type": "Academic project",
+            "date": "2024",
+            "language": [
+                "C"
+            ],
+            "team-size": 3,
+            "description": "Programmed a race driver in the C language interacting with a race manager program. Implemented the A* algorithm.",
+            "links": []
+        },
+        {
+            "name": "Film library software",
+            "type": "Personal project",
+            "date": "Summer 2024",
+            "language": [
+                "Java",
+                "JavaFX",
+                "SQL",
+                "CSS"
+            ],
+            "team-size": 1,
+            "description": "Developed a film library software. Data are stored in a SQLite database.",
+            "links": []
+        },
+        {
+            "name": "Discussion server",
+            "type": "Personal project",
+            "date": "April 2024",
+            "language": [
+                "C",
+                "Javascript",
+                "HTML",
+                "CSS"
+            ],
+            "team-size": 1,
+            "description": "Developed a HTTP discussion server in C, using WebSockets. The client side with user interface was made in Javascript.",
+            "links": []
+        },
+        {
+            "name": "Snake",
+            "type": "Personal project",
+            "date": "March 2024",
+            "language": [
+                "Javascript",
+                "HTML",
+                "CSS"
+            ],
+            "team-size": 1,
+            "description": "Developed a simple Snake game",
+            "links": [
+                {
+                    "name": "GitHub repository",
+                    "link": "https://github.com/morgangte/snake"
+                },
+                {
+                    "name": "Try it",
+                    "link": "https://morgangte.github.io/snake/"
+                }
+            ]
+        },
+        {
+            "name": "Conway's Game of Life",
+            "type": "Personal project",
+            "date": "February 2024",
+            "language": [
+                "Javascript",
+                "HTML",
+                "CSS"
+            ],
+            "team-size": 1,
+            "description": "Developed Conway's Game of Life",
+            "links": []
+        },
+        {
+            "name": "Minesweeper",
+            "type": "Personal project",
+            "date": "January 2024",
+            "language": [
+                "Javascript",
+                "HTML",
+                "CSS"
+            ],
+            "team-size": 1,
+            "description": "Developed the Minesweeper game.",
+            "links": [
+                {
+                    "name": "GitHub repository",
+                    "link": "https://github.com/morgangte/demineur"
+                },
+                {
+                    "name": "Try it",
+                    "link": "https://morgangte.github.io/demineur/"
+                }
+            ]
+        },
+        {
+            "name": "Image color table inversion program",
+            "type": "Academic project",
+            "date": "End of 2023",
+            "language": [
+                "C"
+            ],
+            "team-size": 2,
+            "description": "Developped an image color table inversion program. Two approaches were taken: a naive one and one implementing a kd-tree based algorithm.",
+            "links": []
+        }
+    ]
+}

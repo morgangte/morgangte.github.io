@@ -1,0 +1,94 @@
+:root {
+    --background-color: rgb(228, 245, 231);
+    --header-text-color: rgb(27, 67, 50);
+    --article-background-color: rgb(64, 145, 108);
+    --text-primary-color: rgb(228, 245, 231);
+    --text-secondary-color: rgb(145, 199, 169);
+}
+
+a,
+p {
+    padding: 0em;
+    margin: 0.1em;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: var(--text-primary-color);
+}
+
+/******************************************************/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    min-height: 3em;
+    height: 3em;
+    max-height: 3em;
+    margin-top: 0.7em;
+}
+
+header a,
+header p {
+    color: var(--header-text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 1em;
+    max-width: 70em;
+}
+
+div.projects-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: 40%;
+}
+
+article.project {
+    background-color: var(--article-background-color);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+p.project-name {
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+p.project-type {
+    color: var(--text-secondary-color);
+}
+
+p.project-language {
+    color: var(--text-primary-color);
+}
+
+p.project-team-size {
+    color: var(--text-primary-color);
+}
+
+p.project-link a {
+    color: var(--text-primary-color);
+}
