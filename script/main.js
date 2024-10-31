@@ -1,7 +1,7 @@
 window.addEventListener('load', main);
 
 function main() {
-    fetch("page/resource/projects.json")
+    fetch("/resource/projects.json")
         .then((res) => res.json())
         .then((data) => {
             const projects = data["projects"];
