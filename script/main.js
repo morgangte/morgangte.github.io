@@ -1,10 +1,12 @@
-import data from "../resource/projects.json" with { type: 'json' };
-
 window.addEventListener('load', main);
 
 function main() {
-    const projects = data["projects"];
-    insertProjects(projects);
+    fetch("../resource/projects.json")
+        .then((res) => res.json())
+        .then((data) => {
+            const projects = data["projects"];
+            insertProjects(projects);
+        });
 }
 
 function insertProjects(projects) {
