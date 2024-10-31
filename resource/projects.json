@@ -117,7 +117,7 @@
                 "C"
             ],
             "team-size": 2,
-            "description": "Developped an image color table inversion program. Two approaches were taken: a naive one and one implementing a kd-tree based algorithm.",
+            "description": "Developed an image color table inversion program. Two approaches were taken: a naive one and one implementing a kd-tree based algorithm.",
             "links": []
         }
     ]
