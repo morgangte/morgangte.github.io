@@ -1,6 +1,19 @@
 {
     "projects": [
         {
+            "name": "Compiler",
+            "type": "Personal project",
+            "date": "November 2024 - Present",
+            "language": [
+                "C",
+                "Lex",
+                "Yacc"
+            ],
+            "team-size": 1,
+            "description": "Developing a simple compiler. Lexical and syntactic analysis are performed using Lex/Yacc, and the program is interpreted into C code.",
+            "links": []
+        },
+        {
             "name": "Archery game",
             "type": "Academic project",
             "date": "October 2024",
