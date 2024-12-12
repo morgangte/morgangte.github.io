@@ -1,6 +1,7 @@
 window.addEventListener('load', main);
 
 function main() {
+    updateAgeSpan();
     fetch("resource/projects.json")
         .then((res) => res.json())
         .then((data) => {
@@ -9,45 +10,63 @@ function main() {
         });
 }
 
-function insertProjects(projects) {
-    let projectColumns = document.querySelectorAll(".projects-column");
-
-    for (let i = 0; i < projects.length; i++) {
-        insertProject(projects[i], projectColumns[i % projectColumns.length]);
+function updateAgeSpan() {
+    try {
+        let now = new Date();
+        let birth = new Date(2003, 1, 2);
+        let span = document.querySelector("#age-span");
+        span.innerText = (now.getFullYear() - birth.getFullYear()) + " years old";
+    } catch (error) {
+        console.error("Could not update age");
     }
 }
 
-function insertProject(project, column) {
-    let article = document.createElement("article");
-    article.classList.add("project");
-
-    article.appendChild(projectElement(project["name"], "p", "project-name"));
-    article.appendChild(projectElement(project["type"] + " - " + project["date"], "p", "project-type"));
-    article.appendChild(projectElement(project["description"], "p", "project-description"));
-    if (project["team-size"] > 1) {
-        article.appendChild(projectElement("Team of " + project["team-size"] + " people.", "p", "project-team-size"));
+function insertProjects(projects) {
+    let section = document.querySelector("#projects-section");
+    for (let i = 0; i < projects.length; i++) {
+        insertProject(projects[i], section);
     }
-    article.appendChild(projectElement(project["language"].join(", "), "p", "project-language"));
+}
 
+function insertProject(project, section) {
+    let item = document.createElement("div");
+    item.classList.add("content-item");
+
+    let infos = createDivElement("dates-and-location-column");
+    infos.appendChild(createCustomElement("p", project["date"]));
+    infos.appendChild(createCustomElement("p", project["type"]));
+    item.appendChild(infos);
+
+    let content = createDivElement("content-column");
+    content.appendChild(createCustomElement("h3", project["name"]));
+    content.appendChild(createCustomElement("p", project["description"]));
+    if (project["team-size"] > 1) {
+        content.appendChild(createCustomElement("p", "Team of " + project["team-size"] + " people."));
+    }
+    content.appendChild(createCustomElement("p", project["language"].join(", ")));
     let links = project["links"];
     for (let i = 0; i < links.length; i++) {
-        article.appendChild(projectLink(links[i]));
+        content.appendChild(projectLink(links[i]));
     }
+    item.appendChild(content);
 
-    column.appendChild(article);
+    section.appendChild(item);
 }
 
-function projectElement(text, element, css) {
-    let el = document.createElement(element);
-    el.classList.add(css);
-    el.innerText = text;
+function createDivElement(css) {
+    let div = document.createElement("div");
+    div.classList.add(css);
+    return div;
+}
 
+function createCustomElement(element, content) {
+    let el = document.createElement(element);
+    el.innerText = content;
     return el;
 }
 
 function projectLink(link) {
     let p = document.createElement("p");
-    p.classList.add("project-link");
 
     let el = document.createElement("a");
     el.setAttribute("href", link["link"]);

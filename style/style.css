@@ -1,11 +1,15 @@
 :root {
-    --background-color: rgb(228, 245, 231);
-    --header-text-color: rgb(27, 67, 50);
-    --article-background-color: rgb(64, 145, 108);
-    --text-primary-color: rgb(228, 245, 231);
-    --text-secondary-color: rgb(145, 199, 169);
+    --background-color: #f7f7f7;
+    --sidebar-background-color: rgb(10, 102, 194);
+    --content-section-color: #ffffff;
+
+    --content-section-gap: 0.5em;
 }
 
+h1,
+h2,
+h3,
+h4,
 a,
 p {
     padding: 0em;
@@ -18,13 +22,14 @@ p {
     color: var(--text-primary-color);
 }
 
-/******************************************************/
-
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: var(--background-color);
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
 }
+
+/********************* Global *************************/
 
 header {
     display: flex;
@@ -44,51 +49,67 @@ header p {
     color: var(--header-text-color);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    margin: 1em;
+    padding: 0px;
+    background-color: var(--background-color);
 }
 
-section#projects {
+main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0.5em;
-    margin: 1em;
-    max-width: 70em;
 }
 
-div.projects-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    max-width: 40%;
-}
+/***************** Sidebar column *********************/
 
-article.project {
-    background-color: var(--article-background-color);
+section#sidebar {
+    background-color: var(--sidebar-background-color);
+    color: var(--background-color);
+    padding: 0.85em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
     border-radius: 1em;
-    padding: 1em;
+    box-shadow: 0.1em 0.1em 0.2em 0.15em rgba(182, 199, 224, 0.295);
+
+    a,
+    p,
+    h4 {
+        color: var(--background-color);
+    }
+
+    div.sidebar-item {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
 }
 
-p.project-name {
-    font-weight: 800;
-    font-size: 1.3em;
-}
+/************** Main content column *******************/
 
-p.project-type {
-    color: var(--text-secondary-color);
-}
+section#main {
+    margin-left: var(--content-section-gap);
 
-p.project-language {
-    color: var(--text-primary-color);
-}
+    section.content-section {
+        padding: 0.85em;
+        border-radius: 1em;
+        margin-bottom: var(--content-section-gap);
+        background-color: var(--content-section-color);
+        box-shadow: 0.1em 0.1em 0.15em 0.15em rgba(226, 224, 224, 0.295);
+        max-width: 50em;
 
-p.project-team-size {
-    color: var(--text-primary-color);
-}
+        h2 {
+            margin-bottom: -0.375em;
+        }
 
-p.project-link a {
-    color: var(--text-primary-color);
+        div div.dates-and-location-column {
+            min-width: 8.25em;
+            padding-top: 0.2em;
+        }
+
+        div.content-item {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.75em;
+        }
+    }
 }
