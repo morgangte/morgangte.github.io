@@ -1,19 +1,6 @@
 {
     "projects": [
         {
-            "name": "Compiler",
-            "type": "Personal project",
-            "date": "November 2024 - Present",
-            "language": [
-                "C",
-                "Lex",
-                "Yacc"
-            ],
-            "team-size": 1,
-            "description": "Developing a simple compiler. Lexical and syntactic analysis are performed using Lex/Yacc, and the program is interpreted into C code.",
-            "links": []
-        },
-        {
             "name": "Archery game",
             "type": "Academic project",
             "date": "October 2024",
@@ -23,7 +10,7 @@
                 "XML"
             ],
             "team-size": 8,
-            "description": "Developed a simple archery game in Java in a purposely limited timeframe. Supervised a group of 8 people including architects, version control managers and developers. \n The goal was to build a software following the SOLID principles and implementing various design patterns when needed. In our case, Proxy and Decorator design patterns were used.",
+            "description": "Developed a simple archery game in Java in a purposely limited timeframe. Supervised a group of 8 people including architects, version control managers and developers. \n The goal was to build a software following the SOLID principles and implementing various design patterns when needed. Proxy, Strategy, Template Method and Decorator design patterns were implemented.",
             "links": []
         },
         {
@@ -34,7 +21,7 @@
                 "C"
             ],
             "team-size": 3,
-            "description": "Programmed a race driver in the C language interacting with a race manager program. Implemented the A* algorithm.",
+            "description": "Programmed a race driver in the C language interacting with a race manager program by using standard input and outputs. Implemented the A* algorithm. Ranked 2nd out of 29 race cars.",
             "links": []
         },
         {
@@ -48,7 +35,7 @@
                 "CSS"
             ],
             "team-size": 1,
-            "description": "Developed a film library software. Data are stored in a SQLite database.",
+            "description": "Developed a film library software where data are stored in a SQLite database.",
             "links": []
         },
         {
@@ -75,7 +62,7 @@
                 "CSS"
             ],
             "team-size": 1,
-            "description": "Developed a simple Snake game",
+            "description": "Developed a simple Snake game.",
             "links": [
                 {
                     "name": "GitHub repository",
@@ -97,7 +84,7 @@
                 "CSS"
             ],
             "team-size": 1,
-            "description": "Developed Conway's Game of Life",
+            "description": "Developed Conway's Game of Life.",
             "links": []
         },
         {
@@ -131,6 +118,17 @@
             ],
             "team-size": 2,
             "description": "Developed an image color table inversion program. Two approaches were taken: a naive one and one implementing a kd-tree based algorithm.",
+            "links": []
+        },
+        {
+            "name": "Supervised personal initiative work",
+            "type": "Academic project",
+            "date": "2022 - 2023",
+            "language": [
+                "Python"
+            ],
+            "team-size": 1,
+            "description": "Knowing the number of vehicles crossing a road intersection, what is the best road infrastructure to reduce a driver's average waiting time? \n Implemented a simulation of various road intersection models using a cellular automaton (yield sign, stop sign stop, traffic lights and roundabout). Characterized congestion phenomena and waiting time trends obtained with the various different models. Compared experimental results with actual measurements.",
             "links": []
         }
     ]
