@@ -66,6 +66,7 @@ main {
 section#sidebar {
     background-color: var(--sidebar-background-color);
     color: var(--background-color);
+    margin-bottom: var(--content-section-gap);
     padding: 0.85em;
     padding-top: 0.35em;
     padding-bottom: 0.35em;

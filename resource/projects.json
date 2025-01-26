@@ -36,17 +36,6 @@
             "links": []
         },
         {
-            "name": "Programming Challenge - Race driver",
-            "type": "ENSICAEN",
-            "date": "Early 2024",
-            "language": [
-                "C"
-            ],
-            "team-size": 3,
-            "description": "Programmed a race driver in the C language interacting with a race manager program by using standard input and outputs. Implemented the A* algorithm. Ranked 2nd out of 29 race cars.",
-            "links": []
-        },
-        {
             "name": "Film library software",
             "type": "Personal project",
             "date": "Summer 2024",
@@ -58,6 +47,17 @@
             ],
             "team-size": 1,
             "description": "Developed a film library software where data are stored in a SQLite database.",
+            "links": []
+        },
+        {
+            "name": "Programming Challenge - Race driver",
+            "type": "ENSICAEN",
+            "date": "Early 2024",
+            "language": [
+                "C"
+            ],
+            "team-size": 3,
+            "description": "Programmed a race driver in the C language interacting with a race manager program by using standard input and outputs. Implemented the A* algorithm. Ranked 2nd out of 29 race cars.",
             "links": []
         },
         {
