@@ -1,8 +1,30 @@
 {
     "projects": [
         {
+            "name": "Epidemic Simulation - System Programming",
+            "type": "ENSICAEN",
+            "date": "December 2024",
+            "language": [
+                "C"
+            ],
+            "team-size": 4,
+            "description": "Developed an epidemic simulation in C based on 4 different programs communicating via signals, message queues, pipes and a shared memory. POSIX threads were also used.",
+            "links": []
+        },
+        {
+            "name": "Wumpus Rational Agent",
+            "type": "ENSICAEN",
+            "date": "December 2024",
+            "language": [
+                "Python"
+            ],
+            "team-size": 2,
+            "description": "Developed a Rational Agent for a game like \"Hunt the Wumpus\" taking place in a 2D grid environment.",
+            "links": []
+        },
+        {
             "name": "Archery game",
-            "type": "Academic project",
+            "type": "ENSICAEN",
             "date": "October 2024",
             "language": [
                 "Java",
@@ -14,8 +36,8 @@
             "links": []
         },
         {
-            "name": "Programming Challenge",
-            "type": "Academic project",
+            "name": "Programming Challenge - Race driver",
+            "type": "ENSICAEN",
             "date": "Early 2024",
             "language": [
                 "C"
@@ -111,7 +133,7 @@
         },
         {
             "name": "Image color table inversion program",
-            "type": "Academic project",
+            "type": "ENSICAEN",
             "date": "End of 2023",
             "language": [
                 "C"
@@ -122,7 +144,7 @@
         },
         {
             "name": "Supervised personal initiative work",
-            "type": "Academic project",
+            "type": "Lycée Malherbe",
             "date": "2022 - 2023",
             "language": [
                 "Python"
