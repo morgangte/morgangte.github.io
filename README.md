@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple web page to display informations on me.
+A simple web page to display informations about me :)
 
 ## Authors
 
