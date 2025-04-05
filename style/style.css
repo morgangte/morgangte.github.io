@@ -11,6 +11,7 @@ h2,
 h3,
 h4,
 a,
+li,
 p {
     padding: 0em;
     margin: 0.1em;
@@ -28,6 +29,9 @@ h4 {
     font-weight: 700;
 }
 
+ul {
+    margin: 0px;
+}
 
 /********************* Global *************************/
 
