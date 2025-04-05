@@ -1,6 +1,18 @@
 {
     "projects": [
         {
+            "name": "Bloqus Game Server",
+            "type": "ENSICAEN",
+            "date": "January - March 2025",
+            "language": [
+                "C/C++",
+                "Qt6"
+            ],
+            "team-size": 5,
+            "description": "Developed a server for the Bloqus game, that is itself an adaptation of the Blokus board game. This server was built on top of the existing game engine made by Yves Bailly in 2009 (available at https://bloqus.tuxfamily.org/). A tournament manager has also been developed.",
+            "links": []
+        },
+        {
             "name": "Epidemic Simulation - System Programming",
             "type": "ENSICAEN",
             "date": "December 2024",
