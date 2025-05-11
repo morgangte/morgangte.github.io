@@ -1,6 +1,27 @@
 {
     "projects": [
         {
+            "name": "Artificial Neural Network implementation in C",
+            "type": "Personal project",
+            "date": "Mar. - Apr. 2025",
+            "language": [
+                "C",
+                "OpenMP"
+            ],
+            "team-size": 1,
+            "description": "Implemented a customizable Artificial Neural Network (ANN) in C. Tested it on 2 different datasets: the famous hand-written digits MNIST dataset, and the Fashion-MNIST dataset. Also used the OpenMP API to speed up training.",
+            "links": [
+                {
+                    "name": "GitHub repository",
+                    "link": "https://github.com/morgangte/ann-c"
+                },
+                {
+                    "name": "GitHub page",
+                    "link": "https://morgangte.github.io/ann-c/"
+                }
+            ]
+        },
+        {
             "name": "Bloqus Game Server",
             "type": "ENSICAEN",
             "date": "Jan. - Mar. 2025",
