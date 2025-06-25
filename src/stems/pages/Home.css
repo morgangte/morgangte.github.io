@@ -1,0 +1,53 @@
+.home-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-container .home-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: min(90vw, 55em);
+    min-width: min(90vw, 55em);
+
+    --border-radius: 1em;
+    -webkit-border-top-right-radius: var(--border-radius);
+    -webkit-border-bottom-right-radius: var(--border-radius);
+    -moz-border-radius-topright: var(--border-radius);
+    -moz-border-radius-bottomright: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    margin-top: 15vh;
+    width: 40em;
+    max-width: 40em;
+
+    border-left: 20px solid #0582ca;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: rgb(255, 255, 255);
+
+    padding: 1em;
+}
+
+.home-section-container .home-section .title {
+    font-weight: 700;
+    font-size: 2em;
+
+    padding-top: 0.1em;
+}
+
+.home-section-container .home-section .description {
+    --padding: 1em;
+    padding-bottom: var(--padding);
+    padding-top: var(--padding);
+    line-height: 1.75em;
+}
+
+.home-section-container .home-section .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 0.9em;
+}
