@@ -1,0 +1,29 @@
+.project-element {
+    display: flex;
+    flex-direction: row;
+    width: min(90vw, 55em);
+}
+
+.project-element .project-side-column {
+    width: 10em;
+    max-width: 10em;
+    min-width: 10em;
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+}
+
+.project-element .project-side-column p {
+    font-size: 1em;
+}
+
+.project-element .project-content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.project-element .project-title {
+    font-weight: 600;
+    font-size: 1.2em;
+}

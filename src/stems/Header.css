@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    justify-content: center;
+}
+
+.header .header-links {
+    width: 80em;
+    min-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+}
