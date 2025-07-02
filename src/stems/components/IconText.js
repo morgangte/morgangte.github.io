@@ -4,11 +4,11 @@ export class IconTextStem extends Stem {
             classes: ["icon-element"],
             children: [
                 Botany.img({
-                    src: this.attributes.get("icon"),
+                    src: this.attributes.icon,
                     width: "1.25em",
                     height: "1.25em"
                 }),
-                Botany.p({innerHTML: this.attributes.get("title")})
+                Botany.p({innerHTML: this.attributes.title})
             ]
         });
     }

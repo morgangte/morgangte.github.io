@@ -17,19 +17,19 @@ export class HomeStem extends Stem {
                         classes: ["description"]
                     }),
                     Botany.div({classes: ["links"], children: [
-                        (new GitHubLinkStem(this, [
-                            ["title", "GitHub"],
-                            ["link", "https://github.com/morgangte"]
-                        ])).prepare(),
-                        (new IconLinkStem(this, [
-                            ["title", "LinkedIn"],
-                            ["link", "https://www.linkedin.com/in/morgan-gillette1/"],
-                            ["icon", "resource/icons/linkedin.svg"]
-                        ])).prepare(),
-                        (new IconTextStem(this, [
-                            ["title", "morgan.gte[at]gmail.com"],
-                            ["icon", "resource/icons/email.svg"]
-                        ])).prepare()
+                        (new GitHubLinkStem({
+                            title: "GitHub",
+                            link: "https://github.com/morgangte"
+                        })).prepare(),
+                        (new IconLinkStem({
+                            title: "LinkedIn",
+                            link: "https://www.linkedin.com/in/morgan-gillette1/",
+                            icon: "resource/icons/linkedin.svg"
+                        })).prepare(),
+                        (new IconTextStem({
+                            title: "morgan.gte[at]gmail.com",
+                            icon: "resource/icons/email.svg"
+                        })).prepare()
                     ]})
                 ]})
             ]

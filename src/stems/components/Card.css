@@ -1,4 +1,4 @@
-.background-element {
+.card-section {
     display: flex;
     flex-direction: row;
     width: min(90vw, 55em);
@@ -20,7 +20,12 @@
     margin-bottom: 0.5em;
 }
 
-.background-element .background-side-column {
+.card-section h1 {
+    font-weight: 600;
+    font-size: 1.2em;    
+}
+
+.card-section .card-section-side {
     width: 10em;
     max-width: 10em;
     min-width: 10em;
@@ -29,17 +34,12 @@
     flex-direction: column;
 }
 
-.background-element .background-side-column p {
+.card-section .card-section-side p {
     font-size: 1em;
 }
 
-.background-element .background-content-column {
+.card-section .card-section-main {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
-}
-
-.background-element .title {
-    font-weight: 600;
-    font-size: 1.2em;
 }

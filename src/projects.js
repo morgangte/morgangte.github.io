@@ -6,7 +6,7 @@ window.addEventListener('load', main);
 function main() {
     const page = new Plant(document.querySelector("#root"));
     
-    const header = new HeaderStem(page);
+    const header = new HeaderStem();
     page.grow(header);
 
     fetch(
@@ -14,9 +14,9 @@ function main() {
     ).then(
         (res) => res.json()
     ).then((data) => {
-        const content = new ProjectsStem(page, [
-            ["projects", data["projects"]]
-        ]);
+        const content = new ProjectsStem({
+            projects: data["projects"]
+        });
         page.grow(content);
     });
 }

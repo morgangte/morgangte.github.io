@@ -4,13 +4,13 @@ export class IconLinkStem extends Stem {
             classes: ["icon-element"],
             children: [
                 Botany.img({
-                    src: this.attributes.get("icon"),
+                    src: this.attributes.icon,
                     width: "1.25em",
                     height: "1.25em"
                 }),
                 Botany.a({
-                    href: this.attributes.get("link"),
-                    innerHTML: this.attributes.get("title")
+                    href: this.attributes.link,
+                    innerHTML: this.attributes.title
                 })
             ]
         });
@@ -20,6 +20,6 @@ export class IconLinkStem extends Stem {
 export class GitHubLinkStem extends IconLinkStem {
     constructor(parent, attributes=[]) {
         super(parent, attributes);
-        this.attributes.set("icon", "resource/icons/github.svg");
+        this.attributes.icon = "resource/icons/github.svg";
     }
 }
