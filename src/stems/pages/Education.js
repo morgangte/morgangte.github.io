@@ -10,7 +10,7 @@ export class EducationStem extends Stem {
                     (new CardStem({
                         sections: [{
                             title: "Student Internship",
-                            paragraphs: ["Develoment of an LLM-based Assistant for Cybersecurity Risk Assessment."],
+                            paragraphs: ["Developed an LLM-based Assistant for Cybersecurity Risk Assessment."],
                             sidelines: ["April - Aug. 2025", "SINTEF Digital", "Oslo, Norway"]
                         }]
                     }).prepare()),

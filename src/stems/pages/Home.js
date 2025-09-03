@@ -13,7 +13,7 @@ export class HomeStem extends Stem {
                         classes: ["title"]
                      }),
                     Botany.p({  
-                        innerHTML: "I am a Software Engineering student at ENSICAEN (Caen, France), specializing in Cybersecurity and Artificial Intelligence, and graduating in 2026. I am currently doing an internship at SINTEF Digital in Oslo, Norway.",
+                        innerHTML: "I am a Software Engineering student at ENSICAEN (Caen, France), specializing in Cybersecurity and Artificial Intelligence, and graduating in 2026.",
                         classes: ["description"]
                     }),
                     Botany.div({classes: ["links"], children: [
